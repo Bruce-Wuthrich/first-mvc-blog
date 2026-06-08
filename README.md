@@ -3,6 +3,10 @@
 
 En PHP Procédural, structure MVC et base de donnée MySQL
 
+## But
+
+Nous allons faire un blog avec des utilisateurs, des articles et des rubriques
+
 ## Installation de WorkBench
 
 https://dev.mysql.com/downloads/workbench/
@@ -27,5 +31,10 @@ Voici les types de jointures les plus courants :
 - **RIGHT JOIN** : Retourne tous les enregistrements de la table de droite et les enregistrements correspondants de la table de gauche. Si aucune correspondance n'est trouvée, les résultats de la table de gauche seront NULL. `jointure externe droite` signifie que toutes les lignes de la table de droite seront incluses dans le résultat, même si elles n'ont pas de correspondance dans la table de gauche.
 
 
+## Les tables
 
+https://onlinephp.io/c/7a6ff#google_vignette
+
+
+### user
 
