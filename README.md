@@ -33,8 +33,12 @@ Voici les types de jointures les plus courants :
 
 ## Les tables
 
-https://onlinephp.io/c/7a6ff#google_vignette
+
 
 
 ### user
 
+
+## Password_hash et password_verify
+
+https://onlinephp.io/c/ca27f
