@@ -13,11 +13,11 @@ START TRANSACTION;
 SET time_zone = "+00:00";
 
 --
--- Base de données : `firstmichael`
+-- Base de données : `firstbruce`
 --
-DROP DATABASE IF EXISTS `firstmichael`;
-CREATE DATABASE IF NOT EXISTS `firstmichael` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci;
-USE `firstmichael`;
+DROP DATABASE IF EXISTS `firstbruce`;
+CREATE DATABASE IF NOT EXISTS `firstbruce` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci;
+USE `firstbruce`;
 
 -- --------------------------------------------------------
 
