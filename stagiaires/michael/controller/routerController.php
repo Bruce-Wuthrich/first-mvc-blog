@@ -26,6 +26,9 @@ try{
  * Route
  */
 
+// On charge les catégories pour les pages publiques
+$menu = selectAllCategoryMenu($dbConnect);
+
 /**
  * homepage
  */

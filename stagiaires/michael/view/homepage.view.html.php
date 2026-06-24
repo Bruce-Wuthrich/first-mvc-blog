@@ -23,6 +23,9 @@
                 <h1>Le blog de Pitz Michaël</h1>
                 <p class="lead">du blabla</p>
                 <p>Bootstrap v5.2.3</p>
+                <?php
+            var_dump($_GET, $menu);
+                ?>
             </div>
         </div>
         <!-- Bootstrap core JS-->
