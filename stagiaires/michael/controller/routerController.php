@@ -26,10 +26,16 @@ try{
  * Route
  */
 
+// On charge les catégories pour les pages publiques
+$menu = selectAllCategoryMenu($dbConnect); // model
+
 /**
  * homepage
  */
-include_once BASE_URL."/view/homepage.view.html.php";
+// on charge les articles pour la homepage
+// ICI
+$articles = selectAllArticleHomepage($dbConnect);
+include_once BASE_URL."/view/homepage.view.html.php"; // view
 
 //var_dump($dbConnect);
 $dbConnect = null;
