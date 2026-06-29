@@ -8,7 +8,7 @@
 /**
  * pour le menu on va recuperer id et title de toutes les categories par title asc 
  */
-function getAllCategoryMenu(pdo $db): array
+function selectAllCategoryMenu(pdo $db): array
 {
     $sql = "SELECT id, title FROM category ORDER BY title ASC";
     $stmt = $db->query($sql); 

@@ -1,16 +1,17 @@
 <?php
 
 /**
- * 
- * Controller frontal
+ * CONTROLEUR FRONTAL
  */
 
-// lancement d une session
+// lancement d'une session (PHPSESSID)
 session_start();
-// chargement des dependances
-require_once "../config.php";
 
-// chargement du model
-require_once URL_BASE ."/Model/categoryModel.php";
+// chargement des dépendances
+require_once "../config.php";
+// chargement des modèles
+require_once BASE_URL."/model/CategoryModel.php";
+require_once BASE_URL."/model/ArticleModel.php";
+
 // chargement du router
-require_once URL_BASE ."/Controller/routerController.php";
+require_once BASE_URL."/controller/routerController.php";

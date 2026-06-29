@@ -1,30 +1,42 @@
 <?php
 
-/** 
- * notre route
+/**
+ * Notre routeur
  */
 
-// on va se connecter a notre db via pdo
-try {
+/**
+ * On va se connecter
+ * à notre DB via PDO
+ */
+try{
     $dbConnect = new PDO(
-        dsn:      Maria_DSN,
-        username: DB_LOGIN,
-        password: DB_PWD,
+        dsn:Maria_DSN,
+        username:DB_LOGIN,
+        password:DB_PWD,
+        options:[
+            PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+            PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
+        ]
     );
-    $dbConnect->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-} catch (Exception $e) {
+}catch(Exception $e){
     die($e->getMessage());
 }
- /**
-  * route 
- * var_dump($dbConnect);
-  */
 
- // on charge les categories pour le menu public
- $menu = getAllCategoryMenu($dbConnect);
+/**
+ * Route
+ */
 
- 
- include_once URL_BASE . "/View/homepage.view.html.php";
+// On charge les catégories pour les pages publiques
+$menu = selectAllCategoryMenu($dbConnect); // model
 
- $dbConnect = null;
+/**
+ * homepage
+ */
+// on charge les articles pour la homepage
+// ICI
+$articles = selectAllArticleHomepage($dbConnect);
+include_once BASE_URL."/view/homepage.view.html.php"; // view
+
+//var_dump($dbConnect);
+$dbConnect = null;
 
