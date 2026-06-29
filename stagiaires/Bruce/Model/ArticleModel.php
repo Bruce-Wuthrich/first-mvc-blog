@@ -11,6 +11,7 @@
  * 
  */
 
+#exercice je veux recuperer l id renomé en idcateg( groupé avec la , comme separateur) et title renomé en titlecateg ( groupé avec ||| comme separateur) de la table category jointure externe non obligatoire m2m seuls les articles doivent etre present il faut regrouper les articles pour n en avoir qu un article par page
 function selectAllArticleHomepage(PDO $db): array 
 {
     $sql = "SELECT 
@@ -21,6 +22,7 @@ function selectAllArticleHomepage(PDO $db): array
 		ON u.`id` = a.`user_id`
     ORDER BY a.`date` DESC    
 ;";
+
     $stmt = $db->query($sql);
     $datas = $stmt->fetchAll();
     $stmt->closeCursor();
